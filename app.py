@@ -12,6 +12,9 @@ def datos():
 	cero = number[0]
 	msg = input('Escriba su mensaje: ')
 	if cero == '0':
+		# Cambiar el Código de País según tu país.
+		# Esto reemplazará el primer caracter del número de telefono introducido por el código país.
+		# Si no quieres que pase, borra: variable -> cero, condicional -> if, number.replace()
 		number = number.replace(cero, '+58', 1)
 	return number, msg
 
